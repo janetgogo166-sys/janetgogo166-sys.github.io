@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Registration Page</title>
+    <title>Student Registration Form</title>
 </head>
 <body>
-    <h1>Data collection & forms</h1>
+    <h1>Student Registration Form</h1>
+    <form>
     <h2>User Registration Page</h2>
     <p><b>Topic:</b> Form Validation basics</p>
 
@@ -24,13 +25,21 @@
         <br><br>
         
         <label>Gender:</label>
-        <select required></select>
+        <select name="gender"required></select>
             <option value="">--Select Gender--</option>
             <option>Male</option>
             <option>Female</option>
             <option>Other</option>
         </select>
         <br><br>
+
+        <label>Course:</label><br>
+        <select required>
+            <option valve="">--Select Course--</option>
+            <option>Web Development</option>
+            <option>Data Science</option>
+            <option>Graphics Design</option>
+        </select><br><br>
 
         <label>Password:</label>
         <input type="password" required placeholder="password">
