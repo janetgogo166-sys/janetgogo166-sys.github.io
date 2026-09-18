@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rectangle</title>
+        <style>
+            body { font-family: Arial; display: flex; justify-content: center; margin-top: 50px; background: #f0f0f0; }
+            .box { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 0 10px gray; width: 350px;}
+            input { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid grey;}
+            button { width: 48%; padding: 10px; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; }
+            #result { margin-top: 20px; font-weight: bold; background: #e8f5e9; padding: 15px; border-radius: 10px; }
+        </style>
+    </head>
+ </body>
+
+ <div class="box">
+    <h2>Rectangle Calculator</h2>
+    <p>Enter Length and width</p>
+
+    <input type="number" id="length" placeholder="10">
+    <input type="number" id="width" placeholder="5">
+
+    <div>
+        <button onclick="calculateArea()" style="background: #22c55e;width: 48%;">Find Area</button>
+            <button onclick="calculatePerimeter()" style="background: #22c55e;width: 48%;">Find Perimeter</button>
+    </div>
+    <button onclick="calculateBoth()" style="background:#0ea5e9;width:100%; margin-top: 5px">Find Both</button>
+    <div id="result">Result will show here</div>
+ </div>
+ <script>
+    function calculateArea() {
+        let l = parseFloatdocument.getElementById(HTMLid="length")
+        let w = parseFloatdocument.getElementById(HTMLid="width")
+        document.getElementById('result').innerHTML ="Area = " + (l*w);
+    }
+    function calculatePerimeter() {
+        let l = parseFloat(document.getElementById("length").value);
+        let w = parseFloat(document.getElementById("width").value);
+        document.getElementById('result').innerHTML = "perimeter =" +(2*(l+w));
+    }
+    function calculateBoth() {
+        let l = parseFloat(document.getElementById("length").value);
+        let w = parseFloat(document.getElementById("width").value);
+        let Area =l * w;
+        let perimeter = 2 * (l + w);
+        document.getElementById('result').innerHTML="Area = " +(l*w)+"<br>perimeter = "+(2*(l+w));
+    }
+ </script>
+</body>
+ </html>
